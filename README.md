@@ -24,14 +24,21 @@ Una volta avviato Storybook possiamo notare:
 
 ## Testing
 - visual test
-	npm install --save-dev chromatic
-	npx chromatic --project-token=3df49fd6685d
+
+	`npm install --save-dev chromatic`
+
+	`npx chromatic --project-token=`
+
 	[https://storybook.js.org/docs/react/writing-tests/visual-testing](https://storybook.js.org/docs/react/writing-tests/visual-testing)
 - accessibility test
-	npm install @storybook/addon-a11y --save-dev
+
+	`npm install @storybook/addon-a11y --save-dev`
+
 	[https://storybook.js.org/docs/react/writing-tests/accessibility-testing](https://storybook.js.org/docs/react/writing-tests/accessibility-testing)
 - interaction test
-	npm install @storybook/testing-library @storybook/jest --save-dev
+
+	`npm install @storybook/testing-library @storybook/jest --save-dev`
+    
 	[https://storybook.js.org/docs/react/writing-tests/interaction-testing](https://storybook.js.org/docs/react/writing-tests/interaction-testing)
 	[https://github.com/storybookjs/storybook/blob/next/addons/interactions/README.md](https://github.com/storybookjs/storybook/blob/next/addons/interactions/README.md)
 - snapshot test
