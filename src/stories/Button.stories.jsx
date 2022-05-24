@@ -51,6 +51,15 @@ export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
 };
+Secondary.parameters = {
+  backgrounds: {
+    values: [
+      { name: 'red', value: '#f00' },
+      { name: 'green', value: '#0f0' },
+      { name: 'blue', value: '#00f' },
+    ],
+  },
+};
 
 export const Large = Template.bind({});
 Large.args = {
