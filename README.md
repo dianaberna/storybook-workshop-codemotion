@@ -38,7 +38,7 @@ Una volta avviato Storybook possiamo notare:
 - interaction test
 
 	`npm install @storybook/testing-library @storybook/jest --save-dev`
-
+    
 	[https://storybook.js.org/docs/react/writing-tests/interaction-testing](https://storybook.js.org/docs/react/writing-tests/interaction-testing)
 	[https://github.com/storybookjs/storybook/blob/next/addons/interactions/README.md](https://github.com/storybookjs/storybook/blob/next/addons/interactions/README.md)
 - snapshot test
@@ -47,27 +47,17 @@ Una volta avviato Storybook possiamo notare:
 ## Addons
 [https://storybook.js.org/addons/](https://storybook.js.org/addons/)
 
-1- links
-
-2- accessibility
-
-3- design
-
-4- storysource
-
-5- chromatic
-
-6- viewport
-
-7- measure
-
-8- react theming
-
-9- badge
-
-10- performance
-
-11- apollo
+1. links
+2. accessibility
+3. design
+4. storysource
+5. chromatic
+6. viewport
+7. measure
+8. react theming
+9. badge
+10. performance
+11. apollo -> graphql-api
 
 ## Builder
 [https://storybook.js.org/docs/react/builders/overview](https://storybook.js.org/docs/react/builders/overview)
