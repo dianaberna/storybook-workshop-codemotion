@@ -3,11 +3,17 @@
 Iniziamo installando React e instanziando Storybook
 
 `npx creare-react-app wb-storybook`
+
 `npm uninstall --save react-scripts`
+
 `npm uninstall --save web-vitals`
+
 `npm uninstall --save @testing-library`
+
 `npm install --save-dev storybook`
+
 `npx sb init`
+
 `npm run storybook`
 
 Una volta avviato Storybook possiamo notare:
@@ -16,7 +22,7 @@ Una volta avviato Storybook possiamo notare:
 - addons -> controls, actions, interactions
 [https://storybook.js.org/docs/react/essentials/controls](https://storybook.js.org/docs/react/essentials/controls)
 
-Testing
+## Testing
 - visual test
 	npm install --save-dev chromatic
 	npx chromatic --project-token=3df49fd6685d
@@ -31,7 +37,7 @@ Testing
 - snapshot test
 
 
-Addons
+## Addons
 [https://storybook.js.org/addons/](https://storybook.js.org/addons/)
 
 1- links
@@ -46,5 +52,5 @@ Addons
 10- performance
 11- apollo -> graphql-api
 
-Builder
+## Builder
 [https://storybook.js.org/docs/react/builders/overview](https://storybook.js.org/docs/react/builders/overview)
