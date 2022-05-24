@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# Storybook Workshop Codemotion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Iniziamo installando React e instanziando Storybook
 
-## Available Scripts
+`npx creare-react-app wb-storybook`
+`npm uninstall --save react-scripts`
+`npm uninstall --save web-vitals`
+`npm uninstall --save @testing-library`
+`npm install --save-dev storybook`
+`npx sb init`
+`npm run storybook`
 
-In the project directory, you can run:
+Una volta avviato Storybook possiamo notare:
+- sidebar -> storie, doc, gerarchia
+- toolbar -> canvas, docs, plusanti vari
+- addons -> controls, actions, interactions
+[https://storybook.js.org/docs/react/essentials/controls](https://storybook.js.org/docs/react/essentials/controls)
 
-### `npm start`
+Testing
+- visual test
+	npm install --save-dev chromatic
+	npx chromatic --project-token=3df49fd6685d
+	[https://storybook.js.org/docs/react/writing-tests/visual-testing](https://storybook.js.org/docs/react/writing-tests/visual-testing)
+- accessibility test
+	npm install @storybook/addon-a11y --save-dev
+	[https://storybook.js.org/docs/react/writing-tests/accessibility-testing](https://storybook.js.org/docs/react/writing-tests/accessibility-testing)
+- interaction test
+	npm install @storybook/testing-library @storybook/jest --save-dev
+	[https://storybook.js.org/docs/react/writing-tests/interaction-testing](https://storybook.js.org/docs/react/writing-tests/interaction-testing)
+	[https://github.com/storybookjs/storybook/blob/next/addons/interactions/README.md](https://github.com/storybookjs/storybook/blob/next/addons/interactions/README.md)
+- snapshot test
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Addons
+[https://storybook.js.org/addons/](https://storybook.js.org/addons/)
 
-### `npm test`
+1- links
+2- accessibility
+3- design
+4- storysource
+5- chromatic
+6- viewport
+7- measure
+8- react theming
+9- badge
+10- performance
+11- apollo -> graphql-api
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Builder
+[https://storybook.js.org/docs/react/builders/overview](https://storybook.js.org/docs/react/builders/overview)

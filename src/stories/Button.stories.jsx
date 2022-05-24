@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Button } from './Button';
-
+import { withDesign } from 'storybook-addon-designs'
 import { expect } from '@storybook/jest';
 import { within, userEvent } from '@storybook/testing-library';
 
@@ -14,8 +14,8 @@ export default {
     backgroundColor: { control: 'color' },
     onClick: { action: true },
   },
+  decorators: [withDesign],
 };
-
 
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
@@ -44,7 +44,7 @@ Demo.play = async ({ args, canvasElement }) => {
     await expect(args.onClick).toHaveBeenCalled();
 };
 Demo.args = {
-  label: 'Button',
+  label: 'Button Demo',
 };
 
 export const Secondary = Template.bind({});
@@ -72,3 +72,9 @@ Small.args = {
   size: 'small',
   label: 'Button',
 };
+Small.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/WJqZ4FmiXGr8vOZlAQxwGj/Material-2-Design-Kit-(Community)?node-id=242%3A7153',
+  },
+}
