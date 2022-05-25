@@ -2,7 +2,7 @@
 
 Iniziamo installando React e instanziando Storybook
 
-`npx creare-react-app wb-storybook`
+`npx create-react-app wb-storybook`
 
 `npm uninstall --save react-scripts`
 
